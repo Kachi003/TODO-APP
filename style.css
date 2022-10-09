@@ -1,0 +1,115 @@
+*{padding:0;
+  margin:0;}
+
+.container{width:100vw;
+           display:flex;
+           padding-top:3rem;
+           flex-direction:column;
+           justify-content:center;
+           align-items:center;}
+
+.subcontainer{ display:flex;
+               flex-direction:column;
+               justify-content:space-between;
+               align-items:center;
+               width:80%;
+               }
+
+.todo-head{background-color:rgb(13, 94, 175);
+           color:white;
+           font-size:1.5rem;
+           font-family:sans-serif;
+           font-weight:bolder;
+           text-align:center;
+           padding:1.5rem;
+           margin-bottom:1rem;
+           border:none;
+           border-radius:9px;
+           width:100%;}
+
+.todo-input{width:100%;
+            text-align:center;}
+
+
+input{width:85%;
+      padding:.5rem;
+      border:1px solid;
+      border-radius:6px;}
+
+.add-btn{padding:.5rem;
+         background-color:rgb(13, 94, 175);
+         border:none;
+         border-radius:6px;
+         color:white;}
+
+.todos{margin-bottom:1.5rem;
+       margin-top:1.5rem;
+       display:flex;
+       flex-direction:column;
+       justify-content:space-between;
+       align-items:center;
+       width:100%;}
+
+.todosElem{width:100%;
+           display:flex;
+          flex-direction:row;
+          justify-content:space-between;
+          align-items:center;
+          color:white;
+          margin-bottom:1rem;
+          padding:.5rem 1rem;
+          border:none;
+          border-radius:6px;
+          font-size:1.2rem;
+          background-color:rgb(13, 94, 175);
+         border:1px solid rgb(13, 94, 175);}
+
+.buttons{width:50%;
+         text-align:center;}
+         
+.remove,.done,.complete,.delete{padding:.5rem 1.5rem;
+                                border:none;
+                                border-radius:6px;
+                                text-decoration:none;}
+
+.done,.complete{background-color:green;
+                color:white;}
+
+.remove,.delete{background-color:red;
+                color:white;}
+
+.myspan{width:60%;}
+
+.controls{display:flex;
+          flex-direction:row;
+          height:100%;
+          width:35%;
+          justify-content:space-between;}
+
+.completedEffect{text-decoration: line-through;
+                 text-decoration-color:black;
+                text-decoration-thickness:.1rem;}
+
+.delanimation{animation:fadeoff 2s;}
+
+@keyframes fadeoff {
+  0%{opacity:1;
+     transform:scale(1);}
+  
+     100%{opacity:0;
+      transform:scale(0);}
+}
+
+
+@media only screen and (max-width:767px) {
+               .todo-input{width:80%;}
+               input{width:60%;}
+               .controls{width:50%;}
+               .buttons{width:100%;}
+               .todosElem{height:auto;}
+}
+
+@media only screen and (min-width:1024px) {
+  .controls{width: 15%;}
+}
+
